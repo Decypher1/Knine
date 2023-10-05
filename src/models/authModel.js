@@ -14,6 +14,11 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: true
+    },
+
+    password: {
+        type: String,
+        required: true
     }
 });
 //since I am using the passport local mongoose there will be no need for password model
